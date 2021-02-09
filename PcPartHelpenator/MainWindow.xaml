@@ -7,22 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox HorizontalAlignment="Left" Margin="58,81,0,0" VerticalAlignment="Top" Width="146" Height="31"/>
+        <ComboBox x:Name="CPU_DROP" HorizontalAlignment="Left" Margin="58,81,0,0" VerticalAlignment="Top" Width="146" Height="31"/>
         <TextBlock HorizontalAlignment="Left" Margin="257,33,0,0" TextWrapping="Wrap" Text="B1ADEEE`s PC HELPENATOR" VerticalAlignment="Top" FontSize="20" FontFamily="Unispace"/>
         <TextBlock HorizontalAlignment="Left" Margin="48,57,0,0" TextWrapping="Wrap" Text="1. CPU" VerticalAlignment="Top" FontSize="14"/>
-        <ComboBox HorizontalAlignment="Left" Margin="58,141,0,0" VerticalAlignment="Top" Width="146" Height="35"/>
-        <ComboBox HorizontalAlignment="Left" Margin="58,269,0,0" VerticalAlignment="Top" Width="146" Height="32"/>
-        <ComboBox HorizontalAlignment="Left" Margin="58,204,0,0" VerticalAlignment="Top" Width="146" Height="33"/>
-        <ComboBox HorizontalAlignment="Left" Margin="269,138,0,0" VerticalAlignment="Top" Width="135" Height="35"/>
-        <ComboBox HorizontalAlignment="Left" Margin="269,178,0,0" VerticalAlignment="Top" Width="135" Height="33"/>
-        <ComboBox HorizontalAlignment="Left" Margin="269,216,0,0" VerticalAlignment="Top" Width="135" RenderTransformOrigin="-0.841,0.52" Height="32"/>
-        <ComboBox HorizontalAlignment="Left" Margin="257,302,0,0" VerticalAlignment="Top" Width="135" Height="33"/>
-        <ComboBox HorizontalAlignment="Left" Margin="445,109,0,0" VerticalAlignment="Top" Width="140" Height="31"/>
-        <ComboBox HorizontalAlignment="Left" Margin="445,168,0,0" VerticalAlignment="Top" Width="140" Height="31"/>
-        <ComboBox HorizontalAlignment="Left" Margin="445,216,0,0" VerticalAlignment="Top" Width="140" Height="32"/>
-        <ComboBox HorizontalAlignment="Left" Margin="445,302,0,0" VerticalAlignment="Top" Width="140" Height="32"/>
-        <ComboBox HorizontalAlignment="Left" Margin="445,354,0,0" VerticalAlignment="Top" Width="140" RenderTransformOrigin="0.437,0.393" Height="33"/>
-        <ComboBox HorizontalAlignment="Left" Margin="58,330,0,0" VerticalAlignment="Top" Width="146" Height="32"/>
+        <ComboBox x:Name="GPU_DROP" HorizontalAlignment="Left" Margin="58,141,0,0" VerticalAlignment="Top" Width="146" Height="35"/>
+        <ComboBox x:Name="Heatsink_DROP" HorizontalAlignment="Left" Margin="58,269,0,0" VerticalAlignment="Top" Width="146" Height="32"/>
+        <ComboBox x:Name="RAM_DROP" HorizontalAlignment="Left" Margin="58,204,0,0" VerticalAlignment="Top" Width="146" Height="33"/>
+        <ComboBox x:Name="Storage1_DROP" HorizontalAlignment="Left" Margin="269,138,0,0" VerticalAlignment="Top" Width="135" Height="35"/>
+        <ComboBox x:Name="Storage2_DROP" HorizontalAlignment="Left" Margin="269,178,0,0" VerticalAlignment="Top" Width="135" Height="33"/>
+        <ComboBox x:Name="Storage3_DROP" HorizontalAlignment="Left" Margin="269,216,0,0" VerticalAlignment="Top" Width="135" RenderTransformOrigin="-0.841,0.52" Height="32"/>
+        <ComboBox x:Name="PSU_DROP" HorizontalAlignment="Left" Margin="257,302,0,0" VerticalAlignment="Top" Width="135" Height="33"/>
+        <ComboBox x:Name="CaseRGB_DROP" HorizontalAlignment="Left" Margin="445,109,0,0" VerticalAlignment="Top" Width="140" Height="31"/>
+        <ComboBox x:Name="CaseStealth_DROP" HorizontalAlignment="Left" Margin="445,168,0,0" VerticalAlignment="Top" Width="140" Height="31"/>
+        <ComboBox x:Name="Airflow_DROP" HorizontalAlignment="Left" Margin="445,216,0,0" VerticalAlignment="Top" Width="140" Height="32"/>
+        <ComboBox x:Name="OptionalFans_DROP" HorizontalAlignment="Left" Margin="445,302,0,0" VerticalAlignment="Top" Width="140" Height="32"/>
+        <ComboBox x:Name="OptionalLED_DROP" HorizontalAlignment="Left" Margin="445,354,0,0" VerticalAlignment="Top" Width="140" RenderTransformOrigin="0.437,0.393" Height="33"/>
+        <ComboBox x:Name="MOBO_DROP" HorizontalAlignment="Left" Margin="58,330,0,0" VerticalAlignment="Top" Width="146" Height="32"/>
         <TextBlock HorizontalAlignment="Left" Margin="48,117,0,0" TextWrapping="Wrap" Text="2. GPU" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.55,2.144"/>
         <TextBlock HorizontalAlignment="Left" Margin="48,180,0,0" TextWrapping="Wrap" Text="3. RAM" VerticalAlignment="Top" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Margin="48,245,0,0" TextWrapping="Wrap" Text="4. HeatSink (CPU COOLER)" VerticalAlignment="Top" FontSize="14"/>
@@ -45,6 +45,8 @@
         <TextBlock HorizontalAlignment="Left" Margin="608,262,0,0" TextWrapping="Wrap" Text="BUILD RATING:" VerticalAlignment="Top" FontSize="16" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
         <TextBlock HorizontalAlignment="Left" Margin="633,168,-25,0" TextWrapping="Wrap" Text="€" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
         <TextBlock HorizontalAlignment="Left" Margin="633,228,-25,0" TextWrapping="Wrap" Text="€" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
+        <TextBlock x:Name="RecPrice_TBLK" HorizontalAlignment="Left" Margin="654,168,-46,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
+        <TextBlock x:Name="MaxPrice_TBLK_Copy" HorizontalAlignment="Left" Margin="654,228,-46,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
 
     </Grid>
 </Window>

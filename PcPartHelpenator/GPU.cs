@@ -9,14 +9,14 @@ namespace PcPartHelpenator
     public class GPU
     {
         public string GPUName { get; set; }
-        public string GPUSocketType { get; set; }
+        public string GPUBrand { get; set; }
         public int GPUWatts { get; set; }
         public int GPUPrice { get; set; }
         public int GPURating { get; set; }
-        public GPU(string gpuname, string gpusockettype, int gpuwatts, int gpuprice, int gpurating)
+        public GPU(string gpuname, string gpubrand, int gpuwatts, int gpuprice, int gpurating)
         {
             GPUName = gpuname;
-            GPUSocketType = gpusockettype;
+            GPUBrand = gpubrand;
             GPUWatts = gpuwatts;
             GPUPrice = gpuprice;
             GPURating = gpurating;
@@ -24,6 +24,10 @@ namespace PcPartHelpenator
         public GPU()
         {
 
+        }
+        public override string ToString()
+        {
+            return GPUName;
         }
     }
 }

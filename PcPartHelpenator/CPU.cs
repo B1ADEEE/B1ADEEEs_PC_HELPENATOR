@@ -26,6 +26,9 @@ namespace PcPartHelpenator
         {
 
         }
-
+        public override string ToString()
+        {
+            return CPUName;
+        }
     }
 }

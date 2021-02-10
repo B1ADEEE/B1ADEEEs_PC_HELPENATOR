@@ -92,5 +92,48 @@ namespace PcPartHelpenator
             GPUs.Add(GPU11);
             GPU_DROP.ItemsSource = GPUs;
         }
+
+        private void RAM_DROP_Loaded(object sender, RoutedEventArgs e)
+        {
+            RAM RAM1 = new RAM() { RAMSpeed = "2666MHZ", RAMType = "DDR4", RAMSize = "8gb", RAMPrice = 30, RAMRating = 6 };
+            RAM RAM2 = new RAM() { RAMSpeed = "3000MHZ", RAMType = "DDR4", RAMSize = "8gb", RAMPrice = 35, RAMRating = 7 };
+            RAM RAM3 = new RAM() { RAMSpeed = "2666MHZ", RAMType = "DDR4", RAMSize = "16gb", RAMPrice = 60, RAMRating = 8 };
+            RAM RAM4 = new RAM() { RAMSpeed = "3200MHZ", RAMType = "DDR4", RAMSize = "16gb", RAMPrice = 75, RAMRating = 9 };
+            RAM RAM5 = new RAM() { RAMSpeed = "3000MHZ", RAMType = "DDR4", RAMSize = "32gb", RAMPrice = 140, RAMRating = 10 };
+            RAM RAM6 = new RAM() { RAMSpeed = "3600MHZ", RAMType = "DDR4", RAMSize = "32gb", RAMPrice = 155, RAMRating = 10 };
+
+            RAMs.Add(RAM1);
+            RAMs.Add(RAM2);
+            RAMs.Add(RAM3);
+            RAMs.Add(RAM4);
+            RAMs.Add(RAM5);
+            RAMs.Add(RAM6);
+            GPU_DROP.ItemsSource = RAMs;
+        }
+
+        private void Heatsink_DROP_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MOBO_DROP_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Storage1_DROP_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CaseRGB_DROP_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OptionalFans_DROP_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -8,16 +8,16 @@ namespace PcPartHelpenator
 {
     public class RAM
     {
-        public string RAMBrand { get; set; }
         public string RAMType { get; set; }
         public string RAMSpeed { get; set; }
+        public string RAMSize { get; set; }
         public int RAMPrice { get; set; }
         public int RAMRating { get; set; }
-        public RAM(string rambrand,string ramtype,string ramspeed,int ramprice,int ramrating)
+        public RAM(string ramtype,string ramspeed,string ramsize,int ramprice,int ramrating)
         {
-            RAMBrand = rambrand;
             RAMType = ramtype;
             RAMSpeed = ramspeed;
+            RAMSize = ramsize;
             RAMPrice = ramprice;
             RAMRating = ramrating;
         }

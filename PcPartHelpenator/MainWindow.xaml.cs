@@ -108,7 +108,7 @@ namespace PcPartHelpenator
             RAMs.Add(RAM4);
             RAMs.Add(RAM5);
             RAMs.Add(RAM6);
-            GPU_DROP.ItemsSource = RAMs;
+            RAM_DROP.ItemsSource = RAMs;
         }
 
         private void Heatsink_DROP_Loaded(object sender, RoutedEventArgs e)

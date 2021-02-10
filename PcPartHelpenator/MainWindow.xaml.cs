@@ -26,6 +26,14 @@ namespace PcPartHelpenator
     public partial class MainWindow : Window
     {
         List<CPU> CPUs = new List<CPU>();
+        List<GPU> GPUs = new List<GPU>();
+        List<RAM> RAMs = new List<RAM>();
+        List<Heatsink> Heatsinks = new List<Heatsink>();
+        List<MotherBoard> MotherBoards = new List<MotherBoard>();
+        List<Storage> Storages = new List<Storage>();
+        List<PowerSupply> PowerSupplies = new List<PowerSupply>();
+        List<Case> Cases = new List<Case>();
+        List<Optional> Optionals = new List<Optional>();
         public MainWindow()
         {
             InitializeComponent();
@@ -54,7 +62,12 @@ namespace PcPartHelpenator
             CPUs.Add(CPU8);
             CPUs.Add(CPU9);
             CPUs.Add(CPU10);
-            CPU_DROP.ItemsSource = CPUs;
+            CPU_DROP.ItemsSource = CPUs; 
+        }
+
+        private void GPU_DROP_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

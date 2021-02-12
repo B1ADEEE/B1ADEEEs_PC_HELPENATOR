@@ -41,16 +41,16 @@ namespace PcPartHelpenator
 
         private void CPU_DROP_Loaded(object sender, RoutedEventArgs e)
         {
-            CPU CPU1 = new CPU() { CPUName = "Core i3 10100F", CPUSocketType = "LGA 1200", CPUWatts = 65, CPUPrice = 110, CPURating = 4 };
-            CPU CPU2 = new CPU() { CPUName = "Core i5 10400F", CPUSocketType = "LGA 1200", CPUWatts = 65, CPUPrice = 160, CPURating = 6 };
-            CPU CPU3 = new CPU() { CPUName = "Core i5 10600k", CPUSocketType = "LGA 1200", CPUWatts = 125, CPUPrice = 230, CPURating = 7 };
-            CPU CPU4 = new CPU() { CPUName = "Core i7 10700k", CPUSocketType = "LGA 1200", CPUWatts = 125, CPUPrice = 320, CPURating = 8 };
-            CPU CPU5 = new CPU() { CPUName = "Core i9 10900k", CPUSocketType = "LGA 1200", CPUWatts = 125, CPUPrice = 590, CPURating = 9 };
-            CPU CPU6 = new CPU() { CPUName = "Ryzen 3 3300x", CPUSocketType = "AM4", CPUWatts = 65, CPUPrice = 110, CPURating = 5 };
-            CPU CPU7 = new CPU() { CPUName = "Ryzen 5 3600", CPUSocketType = "AM4", CPUWatts = 65, CPUPrice = 170, CPURating = 7 };
-            CPU CPU8 = new CPU() { CPUName = "Ryzen 5 5600x", CPUSocketType = "AM4", CPUWatts = 65, CPUPrice = 270, CPURating = 8 };
-            CPU CPU9 = new CPU() { CPUName = "Ryzen 7 5800x", CPUSocketType = "AM4", CPUWatts = 105, CPUPrice = 420, CPURating = 8 };
-            CPU CPU10 = new CPU() { CPUName = "Ryzen 9 5900x", CPUSocketType = "AM4", CPUWatts = 105, CPUPrice = 520, CPURating = 10 };
+            CPU CPU1 = new CPU() { CPUName = "Core i3 10100F", CPUSocketType = "LGA 1200", CPUWatts = 65,CPUHeatsink = "Yes", CPUPrice = 110, CPURating = 4 };
+            CPU CPU2 = new CPU() { CPUName = "Core i5 10400F", CPUSocketType = "LGA 1200", CPUWatts = 65, CPUHeatsink = "Yes", CPUPrice = 160, CPURating = 6 };
+            CPU CPU3 = new CPU() { CPUName = "Core i5 10600k", CPUSocketType = "LGA 1200", CPUWatts = 125, CPUHeatsink = "No", CPUPrice = 230, CPURating = 7 };
+            CPU CPU4 = new CPU() { CPUName = "Core i7 10700k", CPUSocketType = "LGA 1200", CPUWatts = 125, CPUHeatsink = "No", CPUPrice = 320, CPURating = 8 };
+            CPU CPU5 = new CPU() { CPUName = "Core i9 10900k", CPUSocketType = "LGA 1200", CPUWatts = 125, CPUHeatsink = "No", CPUPrice = 590, CPURating = 9 };
+            CPU CPU6 = new CPU() { CPUName = "Ryzen 3 3300x", CPUSocketType = "AM4", CPUWatts = 65, CPUHeatsink = "Yes", CPUPrice = 110, CPURating = 5 };
+            CPU CPU7 = new CPU() { CPUName = "Ryzen 5 3600", CPUSocketType = "AM4", CPUWatts = 65, CPUHeatsink = "Yes", CPUPrice = 170, CPURating = 7 };
+            CPU CPU8 = new CPU() { CPUName = "Ryzen 5 5600x", CPUSocketType = "AM4", CPUWatts = 65, CPUHeatsink = "Yes", CPUPrice = 270, CPURating = 8 };
+            CPU CPU9 = new CPU() { CPUName = "Ryzen 7 5800x", CPUSocketType = "AM4", CPUWatts = 105, CPUHeatsink = "No", CPUPrice = 420, CPURating = 8 };
+            CPU CPU10 = new CPU() { CPUName = "Ryzen 9 5900x", CPUSocketType = "AM4", CPUWatts = 105, CPUHeatsink = "No", CPUPrice = 520, CPURating = 10 };
 
             CPUs.Add(CPU1);
             CPUs.Add(CPU2);
@@ -113,7 +113,20 @@ namespace PcPartHelpenator
 
         private void Heatsink_DROP_Loaded(object sender, RoutedEventArgs e)
         {
+            Heatsink Heatsink1 = new Heatsink() { HeatsinkName = "OEM (in box)", HeatsinkSocket = "Any", HeatsinkPrice = 0, HeatsinkRating = 3 };
+            Heatsink Heatsink2 = new Heatsink() { HeatsinkName = "Hyper 212", HeatsinkSocket = "Any", HeatsinkPrice = 35, HeatsinkRating = 7 };
+            Heatsink Heatsink3 = new Heatsink() { HeatsinkName = "Dark Rock 4", HeatsinkSocket = "Any", HeatsinkPrice = 70, HeatsinkRating = 8 };
+            Heatsink Heatsink4 = new Heatsink() { HeatsinkName = "Noctua NH-U12s", HeatsinkSocket = "Any", HeatsinkPrice = 70, HeatsinkRating = 8 };
+            Heatsink Heatsink5 = new Heatsink() { HeatsinkName = "MasterLiquid ML120L", HeatsinkSocket = "Any", HeatsinkPrice = 60, HeatsinkRating = 7 };
+            Heatsink Heatsink6 = new Heatsink() { HeatsinkName = "Kraken x63", HeatsinkSocket = "Any", HeatsinkPrice = 140, HeatsinkRating = 9 };
 
+            Heatsinks.Add(Heatsink1);
+            Heatsinks.Add(Heatsink2);
+            Heatsinks.Add(Heatsink3);
+            Heatsinks.Add(Heatsink4);
+            Heatsinks.Add(Heatsink5);
+            Heatsinks.Add(Heatsink6);
+            Heatsink_DROP.ItemsSource = Heatsinks;
         }
 
         private void MOBO_DROP_Loaded(object sender, RoutedEventArgs e)

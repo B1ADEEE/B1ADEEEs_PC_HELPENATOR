@@ -11,14 +11,16 @@ namespace PcPartHelpenator
         public string CPUName { get; set; }
         public string CPUSocketType { get; set; }
         public int CPUWatts { get; set; }
+        public string CPUHeatsink { get; set; }
         public int CPUPrice { get; set; }
         public int CPURating { get; set; }
 
-        public CPU (string cpuname,string cpusockettype,int cpuwatts,int cpuprice,int cpurating)
+        public CPU (string cpuname,string cpusockettype,int cpuwatts,string cpuheatsink,int cpuprice,int cpurating)
         {
             CPUName = cpuname;
             CPUSocketType = cpusockettype;
             CPUWatts = cpuwatts;
+            CPUHeatsink = cpuheatsink;
             CPUPrice = cpuprice;
             CPURating = cpurating;
         }

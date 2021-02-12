@@ -207,5 +207,23 @@ namespace PcPartHelpenator
         {
 
         }
+
+        private void PSU_DROP_Loaded(object sender, RoutedEventArgs e)
+        {
+            PowerSupply PowerSupply1 = new PowerSupply() { PSUBrand = "EVGA", PSUWatts = "550w",PSUPrice = 60,PSURating = 6 };
+            PowerSupply PowerSupply2 = new PowerSupply() { PSUBrand = "AeroCool", PSUWatts = "600w", PSUPrice = 50, PSURating = 5 };
+            PowerSupply PowerSupply3 = new PowerSupply() { PSUBrand = "Corsair", PSUWatts = "650w", PSUPrice = 75, PSURating = 7 };
+            PowerSupply PowerSupply4 = new PowerSupply() { PSUBrand = "Antec", PSUWatts = "700w", PSUPrice = 75, PSURating = 7 };
+            PowerSupply PowerSupply5 = new PowerSupply() { PSUBrand = "EVGA", PSUWatts = "750w", PSUPrice = 110, PSURating = 9 };
+            PowerSupply PowerSupply6 = new PowerSupply() { PSUBrand = "Corsair", PSUWatts = "850w", PSUPrice = 150, PSURating = 10 };
+
+            PowerSupplies.Add(PowerSupply1);
+            PowerSupplies.Add(PowerSupply2);
+            PowerSupplies.Add(PowerSupply3);
+            PowerSupplies.Add(PowerSupply4);
+            PowerSupplies.Add(PowerSupply5);
+            PowerSupplies.Add(PowerSupply6);
+            PSU_DROP.ItemsSource = PowerSupplies;
+        }
     }
 }

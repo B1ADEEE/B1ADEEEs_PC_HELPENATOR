@@ -205,7 +205,21 @@ namespace PcPartHelpenator
 
         private void OptionalFans_DROP_Loaded(object sender, RoutedEventArgs e)
         {
+            Optional Optional1 = new Optional() { OptinalName = "2x Noctua NF-P12 ", OptionalType = "FANS",OptionalPrice = 30,OptionalRating = 9};
+            Optional Optional2 = new Optional() { OptinalName = "3x Corsair AF120 ", OptionalType = "FANS", OptionalPrice = 35, OptionalRating = 8 };
+            Optional Optional3 = new Optional() { OptinalName = "5x Antec PF Series", OptionalType = "FANS", OptionalPrice = 25, OptionalRating = 7 };
+            Optional Optional4 = new Optional() { OptinalName = "5x Deep Cool RF120M ", OptionalType = "FANS", OptionalPrice = 45, OptionalRating = 8 };
+            Optional Optional5 = new Optional() { OptinalName = "ARGB LED Strip ", OptionalType = "LED", OptionalPrice = 15, OptionalRating = 7 };
+            Optional Optional6 = new Optional() { OptinalName = "Corsair Pro LED Strip ", OptionalType = "LED", OptionalPrice = 35, OptionalRating = 8 };
 
+            Optionals.Add(Optional1);
+            Optionals.Add(Optional2);
+            Optionals.Add(Optional3);
+            Optionals.Add(Optional4);
+            Optionals.Add(Optional5);
+            Optionals.Add(Optional6);
+            OptionalFans_DROP.ItemsSource = Optionals;
+            OptionalLED_DROP.ItemsSource = Optionals;
         }
 
         private void PSU_DROP_Loaded(object sender, RoutedEventArgs e)

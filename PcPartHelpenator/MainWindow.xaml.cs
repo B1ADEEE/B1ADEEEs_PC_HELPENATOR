@@ -131,7 +131,22 @@ namespace PcPartHelpenator
 
         private void MOBO_DROP_Loaded(object sender, RoutedEventArgs e)
         {
+            MotherBoard MotherBoard1 = new MotherBoard() { MotherboardName = "Gigabyte a320", MotherboardSocket = "AM4", MotherboardSize = "MATX", MotherBoardMaxRam = 16, MotherboardRam = "DDR4", MotherboardPrice = 50, MotherboardRating = 4 };
+            MotherBoard MotherBoard2 = new MotherBoard() { MotherboardName = "AsRock b450", MotherboardSocket = "AM4", MotherboardSize = "MATX", MotherBoardMaxRam = 32, MotherboardRam = "DDR4", MotherboardPrice = 75, MotherboardRating = 6 };
+            MotherBoard MotherBoard3 = new MotherBoard() { MotherboardName = "MSI b550", MotherboardSocket = "AM4", MotherboardSize = "ATX", MotherBoardMaxRam = 32, MotherboardRam = "DDR4", MotherboardPrice = 120, MotherboardRating = 8 };
+            MotherBoard MotherBoard4 = new MotherBoard() { MotherboardName = "Asus x570", MotherboardSocket = "AM4", MotherboardSize = "ATX", MotherBoardMaxRam = 32, MotherboardRam = "DDR4", MotherboardPrice = 200, MotherboardRating = 10 };
+            MotherBoard MotherBoard5 = new MotherBoard() { MotherboardName = "Gigabyte h410s", MotherboardSocket = "LGA 1200", MotherboardSize = "MATX", MotherBoardMaxRam = 16, MotherboardRam = "DDR4", MotherboardPrice = 80, MotherboardRating = 4 };
+            MotherBoard MotherBoard6 = new MotherBoard() { MotherboardName = "Asus b460-h", MotherboardSocket = "LGA 1200", MotherboardSize = "ATX", MotherBoardMaxRam = 32, MotherboardRam = "DDR4", MotherboardPrice = 150, MotherboardRating = 7 };
+            MotherBoard MotherBoard7 = new MotherBoard() { MotherboardName = "MSI z490", MotherboardSocket = "LGA 1200", MotherboardSize = "ATX", MotherBoardMaxRam = 32, MotherboardRam = "DDR4", MotherboardPrice = 240, MotherboardRating = 9 };
 
+            MotherBoards.Add(MotherBoard1);
+            MotherBoards.Add(MotherBoard2);
+            MotherBoards.Add(MotherBoard3);
+            MotherBoards.Add(MotherBoard4);
+            MotherBoards.Add(MotherBoard5);
+            MotherBoards.Add(MotherBoard6);
+            MotherBoards.Add(MotherBoard7);
+            MOBO_DROP.ItemsSource = MotherBoards;
         }
 
         private void Storage1_DROP_Loaded(object sender, RoutedEventArgs e)

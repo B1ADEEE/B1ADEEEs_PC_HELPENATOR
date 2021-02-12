@@ -177,7 +177,30 @@ namespace PcPartHelpenator
 
         private void CaseRGB_DROP_Loaded(object sender, RoutedEventArgs e)
         {
+            Case Case1 = new Case() { CaseName = "Mini Abyss", CaseLooks = 1, CaseSize = "MATX", CasePrice = 70, CaseRating = 8 };
+            Case Case2 = new Case() { CaseName = "Carbide Spec-05", CaseLooks = 2, CaseSize = "ATX", CasePrice = 55, CaseRating = 6 };
+            Case Case3 = new Case() { CaseName = "H510", CaseLooks = 2, CaseSize = "ATX", CasePrice = 90, CaseRating = 8 };
+            Case Case4 = new Case() { CaseName = "KZ10", CaseLooks = 3, CaseSize = "ATX", CasePrice = 55, CaseRating = 7 };
+            Case Case5 = new Case() { CaseName = "ICUE 220T", CaseLooks = 3, CaseSize = "ATX", CasePrice = 110, CaseRating = 8 };
+            Case Case6 = new Case() { CaseName = "CIT Dark Star", CaseLooks = 2, CaseSize = "ATX", CasePrice = 40, CaseRating = 5 };
+            Case Case7 = new Case() { CaseName = "TD500 Mesh", CaseLooks = 3, CaseSize = "ATX", CasePrice = 110, CaseRating = 9 };
+            Case Case8 = new Case() { CaseName = "Corsair 280x", CaseLooks = 2, CaseSize = "MATX", CasePrice = 170, CaseRating = 10 };
+            Case Case9 = new Case() { CaseName = "Kolink Void", CaseLooks = 1, CaseSize = "ATX", CasePrice = 120, CaseRating = 8 };
+            Case Case10 = new Case() { CaseName = "Cyclon Mini", CaseLooks = 1, CaseSize = "MATX", CasePrice = 55, CaseRating = 7 };
 
+            Cases.Add(Case1);
+            Cases.Add(Case2);
+            Cases.Add(Case3);
+            Cases.Add(Case4);
+            Cases.Add(Case5);
+            Cases.Add(Case6);
+            Cases.Add(Case7);
+            Cases.Add(Case8);
+            Cases.Add(Case9);
+            Cases.Add(Case10);
+            CaseRGB_DROP.ItemsSource = Cases;
+            CaseStealth_DROP.ItemsSource = Cases;
+            Airflow_DROP.ItemsSource = Cases;
         }
 
         private void OptionalFans_DROP_Loaded(object sender, RoutedEventArgs e)

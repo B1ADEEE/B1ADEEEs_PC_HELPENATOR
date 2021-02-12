@@ -47,6 +47,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="633,228,-25,0" TextWrapping="Wrap" Text="€" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
         <TextBlock x:Name="RecPrice_TBLK" HorizontalAlignment="Left" Margin="654,168,-46,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
         <TextBlock x:Name="MaxPrice_TBLK_Copy" HorizontalAlignment="Left" Margin="654,228,-46,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
+        <TextBlock HorizontalAlignment="Left" Margin="255,255,0,0" TextWrapping="Wrap" Text="(Storage No.1 Contains Operating System)" VerticalAlignment="Top" FontSize="8"/>
 
     </Grid>
 </Window>

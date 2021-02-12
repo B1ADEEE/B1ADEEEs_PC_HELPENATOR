@@ -151,7 +151,28 @@ namespace PcPartHelpenator
 
         private void Storage1_DROP_Loaded(object sender, RoutedEventArgs e)
         {
+            Storage storage1 = new Storage() { StorageSize = "120gb", StorageType = "SSD", StoragePrice = 20, StorageRating = 7 };
+            Storage storage2 = new Storage() { StorageSize = "240gb", StorageType = "SSD", StoragePrice = 30, StorageRating = 8 };
+            Storage storage3 = new Storage() { StorageSize = "500gb", StorageType = "SSD", StoragePrice = 55, StorageRating = 8 };
+            Storage storage4 = new Storage() { StorageSize = "1TB", StorageType = "SSD", StoragePrice = 100, StorageRating = 9 };
+            Storage storage5 = new Storage() { StorageSize = "2TB", StorageType = "SSD", StoragePrice = 220, StorageRating = 10 };
+            Storage storage6 = new Storage() { StorageSize = "500gb", StorageType = "HDD", StoragePrice = 20, StorageRating = 4 };
+            Storage storage7 = new Storage() { StorageSize = "1TB", StorageType = "HDD", StoragePrice = 40, StorageRating = 5 };
+            Storage storage8 = new Storage() { StorageSize = "2TB", StorageType = "HDD", StoragePrice = 65, StorageRating = 6 };
+            Storage storage9 = new Storage() { StorageSize = "4TB", StorageType = "HDD", StoragePrice = 100, StorageRating = 7 };
 
+            Storages.Add(storage1);
+            Storages.Add(storage2);
+            Storages.Add(storage3);
+            Storages.Add(storage4);
+            Storages.Add(storage5);
+            Storages.Add(storage6);
+            Storages.Add(storage7);
+            Storages.Add(storage8);
+            Storages.Add(storage9);
+            Storage1_DROP.ItemsSource = Storages;
+            Storage2_DROP.ItemsSource = Storages;
+            Storage3_DROP.ItemsSource = Storages;
         }
 
         private void CaseRGB_DROP_Loaded(object sender, RoutedEventArgs e)

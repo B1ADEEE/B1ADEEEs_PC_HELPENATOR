@@ -39,7 +39,6 @@
         <TextBlock HorizontalAlignment="Left" Margin="427,259,0,0" TextWrapping="Wrap" Text="9. OPTIONAL" VerticalAlignment="Top" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Margin="446,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Fans:"/>
         <TextBlock HorizontalAlignment="Left" Margin="446,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="LED Strips:"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="608,141,0,0" TextWrapping="Wrap" Text="RECOMMENDED PRICE:" VerticalAlignment="Top" FontSize="16" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
         <TextBlock HorizontalAlignment="Left" Margin="608,204,0,0" TextWrapping="Wrap" Text="MAXIMUIM PRICE:" VerticalAlignment="Top" FontSize="16" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
         <TextBlock HorizontalAlignment="Left" Margin="608,262,0,0" TextWrapping="Wrap" Text="BUILD RATING:" VerticalAlignment="Top" FontSize="16" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>

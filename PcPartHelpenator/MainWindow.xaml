@@ -47,15 +47,27 @@
         <TabItem Name="ThePC" Header="The FINISHED PC" Width="125">
             <Grid Margin="0,2,0,-2">
                 <Grid.ColumnDefinitions>
-                    
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock HorizontalAlignment="Left" Margin="608,204,0,0" TextWrapping="Wrap" Text="MAXIMUIM PRICE:" VerticalAlignment="Top" FontSize="16" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
-                <TextBlock HorizontalAlignment="Left" Margin="608,262,0,0" TextWrapping="Wrap" Text="BUILD RATING:" VerticalAlignment="Top" FontSize="16" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
-                <TextBlock HorizontalAlignment="Left" Margin="633,228,-25,0" TextWrapping="Wrap" Text="€" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
-                <TextBlock x:Name="MaxPrice_TBLK_Copy" HorizontalAlignment="Left" Margin="654,228,-46,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
-                <TextBlock x:Name="RecPrice_TBLK" HorizontalAlignment="Left" Margin="654,168,-46,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
-                <TextBlock HorizontalAlignment="Left" Margin="633,168,-25,0" TextWrapping="Wrap" Text="€" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
-                <TextBlock HorizontalAlignment="Left" Margin="512.059,141,-6,0" TextWrapping="Wrap" Text="RECOMMENDED PRICE:" VerticalAlignment="Top" FontSize="16" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace" Grid.Column="2"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <TextBlock HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="10" TextWrapping="Wrap" Text="MAXIMUIM PRICE:" VerticalAlignment="Top" FontSize="16" Width="151" Foreground="#FF0B00F7" FontFamily="Unispace"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Row="5" Grid.Column="1" Margin="10" TextWrapping="Wrap" Text="BUILD RATING:" VerticalAlignment="Top" FontSize="16" Width="130" Foreground="#FF0B00F7" FontFamily="Unispace"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" Margin="10" TextWrapping="Wrap" Text="€" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
+                <TextBlock x:Name="MaxPriceTBLK" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" Margin="10" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
+                <TextBlock x:Name="RecPriceTBLK" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" Margin="10" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" Margin="10" TextWrapping="Wrap" Text="€" VerticalAlignment="Top" FontSize="18" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Row="3" Grid.Column="1" Margin="10" TextWrapping="Wrap" Text="RECOMMENDED PRICE:" VerticalAlignment="Top" FontSize="16" Width="184" Foreground="#FF0B00F7" FontFamily="Unispace"/>
+                <ListBox x:Name="PCImageLBX" Grid.Column="0" Grid.RowSpan="5" HorizontalAlignment="Center" VerticalAlignment="Top" Height="300" Margin="40" Width="350"/>
             </Grid>
         </TabItem>
     </TabControl>

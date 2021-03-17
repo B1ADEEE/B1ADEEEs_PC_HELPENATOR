@@ -34,45 +34,5 @@ namespace PcPartHelpenator
         {
             
         }
-
-        private void GPU_DROP_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void RAM_DROP_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void Heatsink_DROP_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void MOBO_DROP_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void Storage1_DROP_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void CaseRGB_DROP_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void OptionalFans_DROP_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void PSU_DROP_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-        }
     }
 }
